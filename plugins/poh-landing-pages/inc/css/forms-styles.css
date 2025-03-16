@@ -1,0 +1,302 @@
+/* Shared structure styles */
+
+input, textarea {
+    font-family: "lato-regular", Arial, sans-serif;
+}
+
+.display-flex {
+    display: flex;
+}
+  
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.form-field input, .form-field textarea {
+    padding: 2%;
+}
+
+#paradigm-forms-container .one-half-column, #paradigm-forms-container .form-field, #paradigm-forms-landing-container .form-field {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.paradigm-forms-button input {
+    padding: 2.5% 5%;
+}
+
+#paradigm-form-received {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+#paradigm-forms-container input:not([type="submit"]), #paradigm-forms-container textarea, #paradigm-forms-container input:not([type="submit"]):focus, #paradigm-forms-container textarea:focus,
+#paradigm-forms-landing-container input:not([type="submit"]):focus, #paradigm-forms-landing-container textarea, #paradigm-forms-landing-container input:not([type="submit"]):focus, #paradigm-forms-landing-container textarea:focus,
+#paradigm-forms-landing-container select  {
+    border: none;
+    outline: none;
+}
+
+/* Structure styles for base form */
+
+.one-half-column {
+    width: 50%;
+}
+
+.paradigm-forms-container .one-half-column input[type=text],
+.paradigm-forms-container .one-half-column input[type=email],
+.paradigm-forms-container .one-half-column input[type=tel],
+.paradigm-forms-container .display-flex input[type=text],
+.paradigm-forms-container .display-flex textarea {
+    width: 100%;
+}
+
+#paradigm-forms-container .content-left input {
+    margin-right: 2.5%;
+}
+
+#paradigm-forms-container .content-right input, #paradigm-forms-container .content-right label, #paradigm-forms-container .content-right select  {
+    margin-left: 2.5%;
+}
+
+#paradigm-forms-container input, #paradigm-forms-container select {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.paradigm-forms-button {
+    text-align: right;
+    margin-top: 1%;
+}
+
+/* Theme styles for base form */
+#paradigm-forms-container {
+    background: transparent;
+    padding: 0%; 
+}
+
+#paradigm-forms-container form label {
+    color: var(--white);
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.paradigm-forms-button input {
+    background-color: var(--light-blue);
+    color: #fff;
+    cursor: pointer;
+    /* transition: all .3s ease-in-out; */
+}
+
+  
+/* Structure styles for sidebar form */
+
+#paradigm-forms-landing-container form .paradigm-forms-button {
+    text-align: center;
+}
+
+#paradigm-forms-landing-container .form-field select {
+    padding: 2% 0;
+}
+
+#procedure-of-interest {
+    color: gray;
+}
+/* Theme styles for sidebar form */
+
+#paradigm-forms-landing-container {
+    box-shadow: 0px 10px 20px #0000000D;
+    padding: 1% 2% 0 2%;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+#paradigm-forms-landing-container #paradigm-form label {
+    margin-bottom: 1%;
+    font-size: .8rem;
+}
+
+#paradigm-form-sidebar-page-wrapper {
+    margin-bottom: 10%;
+}
+
+#paradigm-forms-landing-container p {
+    color: #fff;
+}
+
+/* ADDL Reese Get Connected  Homepage Form adds */
+
+#get-connected #paradigm-forms-container .left-content {
+    margin-right: 1%;
+}
+
+/* Inner Border Color */ 
+/* Input indent */
+#get-connected #paradigm-forms-container input:not([type="submit"]),
+#paradigm-forms-landing-container input:not([type="submit"]),
+#get-connected #paradigm-forms-container #preferred-location,
+#paradigm-forms-landing-container #preferred-location,
+#paradigm-forms-landing-container #referral,
+#get-connected #paradigm-forms-container #form-message,
+#paradigm-forms-landing-container #form-message,
+#paradigm-forms-landing-container select {
+   border: 1px solid #dbdbdb;
+   border-radius: 8px!important;
+}
+ /* This needed special attention since it is lining up with content that is set at a 50/50 with a margin in place */
+#get-connected #paradigm-forms-container #referral {
+    padding-left: 1.5%;
+}
+
+/* Removing padding from POI field */
+
+#paradigm-forms-container #procedure-of-interest {
+    padding-left: 0;
+}
+
+/* Removing border from Submit Button */
+#get-connected #paradigm-forms-container #submit {
+    border: none;
+    height: inherit;
+}
+
+#paradigm-forms-landing-container #submit {
+    /* background-color: #0173EA; */
+    width: 100%;
+    /* border: none; */
+}
+
+/* #paradigm-forms-landing-container #submit:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+} */
+
+/* Trying to Fix rounded corners on select boxes for mobile devices ie...mac */
+
+#get-connected #paradigm-forms-container select,
+#get-connected #paradigm-forms-container input:not([type="submit"]),
+#paradigm-forms-landing-container input:not([type="submit"]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 8px; /* This removes the rounded corners */
+}
+
+
+#paradigm-forms-landing-container {
+    box-shadow: 0px 10px 20px #00000029;
+    border: 4px solid #FFFFFF;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.paradigm-forms-button input {
+    font-weight: bold;
+    font-size: .8rem!important;
+    margin-bottom: 2.5%;
+    border-radius: 28px!important;
+}
+
+#paradigm-forms-landing-container > p {
+    margin: 2%;
+}
+
+#paradigm-forms-landing-container h3 {
+    font-size: 1.5rem;
+    font-family: "trajan-pro-3", Arial, sans-serif;
+    color: var(--white);
+  }
+
+/* Responsive media queries */
+/* Laptop media queries */
+@media only screen and (max-width: 1439px) {
+
+
+}
+
+/* Tablet media queries */
+@media only screen and (max-width: 1023px) {
+    #paradigm-forms-landing-container {
+        border: none;
+        box-shadow: none;
+        padding-left: 0;
+    }
+
+    #paradigm-forms-landing-container h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+    #paradigm-forms-landing-container {
+        padding-left: 2%;
+    }
+
+    #paradigm-form .display-flex {
+        flex-direction: column;
+    }
+
+    #paradigm-form .one-half-column {
+        width: 100%;
+    }
+
+    .paradigm-forms-button {
+        text-align: center;
+    }
+
+    #paradigm-forms-container .content-left  {
+        padding-right: 0;
+    }
+    
+    #paradigm-forms-container .content-right  {
+        padding-left: 0;
+    }
+
+    #paradigm-forms-container .content-left input {
+        margin-right: 0;
+    }
+    
+    #paradigm-forms-container .content-right input, #paradigm-forms-container .content-right label  {
+        margin-left: 0;
+    }
+
+    /* Removing since it is creating LARGE input fields
+    .form-field input, .form-field textarea {
+        padding: 4% 0;
+    }*/
+
+    /* ADDL Reese Get Connected  Homepage Form adds */
+
+    /* Removing preferred location left margin */
+    #get-connected #paradigm-forms-container .content-right select {
+        margin-left: 0%;
+    }
+
+    /* Extend Submit Button Full width */
+    #get-connected #paradigm-forms-container #submit {
+        width: 100%;
+    }
+
+    #paradigm-forms-landing-container #submit {
+        margin-top: 2%;
+        
+    }
+
+    /* This needed special attention since it is lining up with content that is set at a 50/50 with a margin in place */
+    #get-connected #paradigm-forms-container #referral {
+        padding-left: 2%;
+    }
+
+}

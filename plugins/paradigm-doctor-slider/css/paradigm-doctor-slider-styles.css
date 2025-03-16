@@ -1,0 +1,225 @@
+.display-flex {
+    display: flex;
+}
+
+.one-fifth-column {
+    width: 20%;
+}
+
+.one-third-column {
+    width: 33%;
+}
+
+.one-half-column {
+    width: 50%;
+}
+
+.two-thirds-column {
+    width: 66%;
+}
+
+.three-quarters-column {
+    width: 75%;
+}
+
+.image-meet-doctor {
+    background-size: cover;
+    background-position: top;
+    background-image: url('/wp-content/plugins/paradigm-doctor-slider/media/dr-1.png');
+    height: 80vh;
+}
+
+.image-background-mtd {
+    background-image: url('/wp-content/plugins/paradigm-doctor-slider/media/bg-1.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.sidebar-image-column {
+    width: 10%;
+    background-image: url('/wp-content/plugins/paradigm-doctor-slider/media/dr-2.png');
+}
+
+.meet-dr-button {
+    background-color: transparent;
+    border: 2px solid var(--light-blue);
+    border-radius: 30px;
+}
+
+.meet-dr-button:hover {
+    background-color: transparent;
+
+}
+
+.meet-dr-button:active, .meet-dr-button:focus, .previous-dr, .next-dr, .previous-dr:hover, .next-dr:hover {
+    background-color: var(--light-blue);
+}
+
+.meet-dr-button:hover {
+    background-color: transparent;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}
+
+.template-meet-the-doctor .two-thirds-column h2, .img-meet-dr-deco, .template-meet-the-doctor .two-thirds-column p, .template-meet-the-doctor-next .two-thirds-column h2, .template-meet-the-doctor-next .two-thirds-column p {
+    color: var(--white);
+    margin-left: 5%;
+}
+
+.previous-next-switches {
+    flex-direction: row;
+    margin: 0 0 10%;
+}
+
+.next-dr {
+    margin-left: 3.5rem;
+}
+
+.template-meet-the-doctor .two-thirds-column, .template-meet-the-doctor-next .two-thirds-column {
+    padding-top: 5%;
+}
+
+.template-meet-the-doctor .two-thirds-column .meet-dr-content + button, .template-meet-the-doctor-next .two-thirds-column .meet-dr-content + button {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.meet-dr-switches button {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.meet-dr-heading  {
+    margin-top: 0;
+}
+
+.meet-dr-link {
+    text-transform: uppercase;
+}
+
+.meet-dr-top-heading {
+    margin-bottom: 0;
+}
+
+.previous-next-switches {
+    margin-left: 5%;
+}
+
+.previous-next-switches .one-fifth-column {
+    width: 10%;
+}
+
+.duplicate-image {
+    position: absolute;
+    width: 100%;
+}
+
+.image-meet-doctor {
+    height: auto;
+}
+
+.img-meet-dr-deco {
+    width: 30%;
+}
+
+.slide-in-from-right {
+    animation: slide-in-from-right .75s ease-in-out;
+}
+
+.slide-out-from-right {
+    animation: slide-out-from-right .75s ease-in-out;
+}
+
+.slide-in-from-left {
+    animation: slide-in-from-left .75s ease-in-out;
+}
+
+.slide-out-from-left {
+    animation: slide-out-from-left .75s ease-in-out;
+}
+
+@keyframes slide-in-from-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide-out-from-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-in-from-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-out-from-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Tablet media queries */
+@media only screen and (max-width: 1440px) {
+
+    .meet-dr-button, .meet-dr-link {
+        font-size: .75rem;
+    }
+
+}
+
+/* Tablet media queries */
+@media only screen and (max-width: 1024px) {
+
+    .meet-dr-switches {
+        display: none!important;
+    }
+
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+    .template-meet-the-doctor .one-third-column, .template-meet-the-doctor-next .one-third-column, .template-meet-the-doctor .two-thirds-column, .template-meet-the-doctor-next .two-thirds-column {
+        width: 100%;
+    }
+
+    .previous-next-switches, .meet-dr-switches, .template-meet-the-doctor, section.meet-doctors-main-content  {
+        flex-direction: column;
+    }
+
+    /* Meet the doctors Page*/
+    div.doctors-left-page-content.two-thirds-column > div > img {
+        float: none;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .image-meet-doctor {
+        height: 80vh;
+    }
+
+    .previous-next-switches {
+        flex-direction: row;
+    }
+
+    .image-background-mtd {
+        height: auto;
+    }
+    
+}

@@ -1,0 +1,158 @@
+/* Paradigm theme reusable structure and component styles - Navigation styles are separated @ /inc/css/navigation */
+/* DO NOT EDIT!!! */
+
+body {
+    margin: 0!important;
+}
+
+#poh-di-b-lpp-body html,
+#poh-di-b-lpp-body body,
+#poh-di-b-lpp-body ol,
+#poh-di-b-lpp-body ul,
+#poh-di-b-lpp-body li,
+#poh-di-b-lpp-body span,
+#poh-di-b-lpp-body a,
+#poh-di-b-lpp-body a:link,
+#poh-di-b-lpp-body a:visited,
+#poh-di-b-lpp-body a:hover,
+#poh-di-b-lpp-body a:active {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    font-weight: normal;
+}
+
+/* Structure styles */
+
+.one-fifth-column {
+    width: 20%;
+}
+
+.one-quarter-column {
+    width: 25%;
+}
+
+.one-third-column {
+    width: 33.3%;
+}
+
+.one-half-column {
+    width: 50%;
+}
+
+.three-fifths-column {
+    width: 60%;
+}
+
+.two-thirds-column {
+    width: 66.6%;
+}
+
+.three-quarters-column {
+    width: 75%;
+}
+
+.four-fifths-column {
+    width: 80%;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.tablet-hidden {
+    display: none;
+}
+
+.list-style-initial {
+    list-style: initial;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+/* Alignment, padding, and margin */
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.padding-5 {
+    padding: 5%;
+}
+
+.padding-left-10 {
+    padding-left: 10%;
+}
+
+.padding-right-10 {
+    padding-right: 10%;
+}
+
+.padding-left-20 {
+    padding-left: 20%;
+}
+
+.padding-right-20 {
+    padding-right: 20%;
+}
+
+.parent-container {
+    position: relative;
+}
+
+.section-padding {
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}

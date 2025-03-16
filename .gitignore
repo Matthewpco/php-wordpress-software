@@ -1,0 +1,75 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# Based off https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Version 2.4.0
+
+# Core
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+.user.ini
+malcare-waf.php
+.htaccess
+/paradigm-admin.php
+nginx.conf
+local-xdebuginfo.php
+
+# Sitemap
+sitemap.xml
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+/wp-content/plugins/akismet*
+/wp-content/plugins/jeffers*
+/wp-content/plugins/all-in-one-wp*
+/wp-content/plugins/malcare-security*
+/wp-content/plugins/object-cache-pro
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# submissions 
+/wp-content/submissions.csv
+/wp-content/request-submissions.csv
+
+# Backups
+/wp-content/ai1wm*
+/wp-content/mc_data*
+/wp-content/plugins/wp-security-toolset/.htaccess*
+
+# Cache files
+/wp-content/cache*
+/wp-content/et-cache*
+/wp-content/upgrade/*
+
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+

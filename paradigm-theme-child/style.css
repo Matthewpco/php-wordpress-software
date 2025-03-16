@@ -1,0 +1,182 @@
+/*
+Theme Name: Paradigm Theme Child
+Theme URI: https://github.com/Paradigm-Oral-Health/Paradigm-Theme
+Description: This is a child theme for Paradigm
+Author: Gary Payne
+Author URI: https://github.com/Matthewpco
+Template: paradigm-theme
+Version: 2.1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: paradigm-oral-health-child
+*/
+
+/* Example child theme starter code for custom site styles */
+/* Configuring headings and paragraph tags */
+
+h1 {
+    color: var(--black);
+    font-size: 3.125rem;
+    font-family: "Trajan-Pro", serif;
+}
+
+h2 {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-family: "Trajan-Pro", serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: var(--black);
+    font-size: 1.375rem;
+    font-family: "Trajan-Pro", serif;
+}
+
+p {
+    color: var(--black);
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    transition-duration: 0.3s;
+    border: none;
+    padding: 10px 15px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--purple);
+}
+
+.white-button {
+    background-color: var(--white);
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+.white-button:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+nav ul {
+    list-style-type: none!important; /* Remove default bullets */
+}
+
+ul {
+    list-style-type: none;
+}
+
+section nav ul li::before, #header-top-bar ul li::before {
+    content: none;
+    padding-right: none;
+}
+
+section ul li::before {
+    content: url('tooth-icon.png'); /* Insert your own image */
+    padding-right: 5px; /* Adjust spacing */
+}
+
+/* 14px */
+.text-xsmall {
+    font-size: 0.875rem; 
+}
+
+/* 28px */
+.text-large {
+    font-size: 1.75rem;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: local("Lato-Bold"),url("fonts/lato-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"),url("fonts/lato-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Trajan-Pro";
+    src: local("Trajan-Pro"),url("fonts/trajan-pro-3.woff") format("woff");
+}
+
+/* Custom Colors */
+
+:root {
+    --white: #ffffff;
+    --black: #212121;
+    --gray: #383740;
+    --light-blue: #019EE2; 
+    --blue: #0173EA;
+    --purple: #322883;
+}
+
+/* Header styles */
+
+
+
+/* Responsive media queries */
+
+/* Laptop media queries */
+@media only screen and (max-width: 1439px) {
+
+}
+/* Tablet media queries */
+@media only screen and (max-width: 1023px) {
+
+    /* struture */
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .section-padding {
+        padding: 5%;
+    }
+
+    .sticky {
+        position: inherit;
+    }
+
+    /* header */
+
+    .hidden-mobile {
+        display: initial;
+    }
+    
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+    /* structure */
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    .one-half-column {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,771 @@
+/*
+Name: Precision Oral Health Dental Implants A Landing Page Styles
+Version: 1.5.0
+*/
+
+#poh-di-a-lpp-body * {
+  box-sizing: border-box;
+}
+
+#poh-di-a-lpp-body button, 
+#poh-di-a-lpp-body #poh-di-a-lpp-seventh-section .button, 
+#poh-di-a-lpp-body #poh-di-a-lpp-eleventh-section .button {
+  transition: all .3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: initial;
+  background-color: #4B9319;
+  color: #fff;
+}
+
+#poh-di-a-lpp-body button:hover, 
+#poh-di-a-lpp-body #poh-di-a-lpp-seventh-section .button:hover, 
+#poh-di-a-lpp-body #poh-di-a-lpp-eleventh-section .button:hover {
+  background-color: #2B580A;
+}
+
+#poh-di-a-lpp-body nav ul li::before {
+  content: none;
+  padding-right: none;
+}
+
+#poh-di-a-lpp-body ul li::before {
+  content: "•";
+  font-size: 2rem;
+  line-height: 2rem; /* Adjust this value as needed */
+  vertical-align: sub; /* Aligns the bullet point vertically */
+  padding-right: 7px;
+}
+
+#poh-di-a-lpp-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+#poh-di-a-lpp-body .cky-btn-revisit-wrapper button, #poh-di-a-lpp-body .cky-modal button {
+  padding: initial;
+  color: initial;
+  background-color: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;
+}
+
+/* Custom colors must have important to override any var colors from the base stylesheet */
+/* Add custom colors to the practice specific stylesheet with the "!important" value */
+
+/* Header */
+
+#poh-di-a-lpp-header {
+  padding: 0 5%;
+  background-color: #fff;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 20px #0000000D;
+  z-index: 100;
+  position: relative;
+}
+
+#poh-di-a-lpp-header button {
+  font-weight: bold;
+}
+
+#poh-di-a-lpp-header-navigation ul {
+  width: 100%;
+  gap: 3%;
+}
+
+#poh-di-a-lpp-header-navigation ul li {
+  white-space: nowrap;
+}
+
+#poh-di-a-lpp-header-navigation ul li a {
+  color: #000;
+  font-size: .875rem;
+}
+
+#wpadminbar ul li:after, #wpadminbar ul li:before {
+  content: normal!important;
+}
+
+#poh-di-a-lpp-mobile-header {
+  display: none;
+}
+
+/* Mobile Navigation */
+
+@-webkit-keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#poh-di-a-lpp-body .hidden {
+  display: none;
+}
+
+#poh-di-a-lpp-body.modal-open {
+  overflow: hidden;
+} 
+
+#poh-di-a-lpp-mobile-nav-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#poh-di-a-lpp-mobile-nav-section > div {
+  background-color: #fff;
+  width: 80%;
+  height: 100%;
+  animation-name: animateleft;
+  animation-duration: 0.4s;
+  position: relative;
+  padding: 5%;
+}
+
+#poh-di-a-lpp-mobile-nav-section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#poh-di-a-lpp-mobile-nav-section ul a {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+#poh-di-a-lpp-mobile-nav-section #poh-di-a-lpp-close-navigation-icon {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  text-align: end;
+}
+
+/* First Section */
+
+#poh-di-a-lpp-first-section {
+  background-image: url('/wp-content/plugins/poh-di-a-lpp/inc/media/first-section-bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+#poh-di-a-lpp-first-section ul {
+  margin: 3% 0;
+}
+
+#poh-di-a-lpp-first-section-reviews {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2%;
+  margin-bottom: 15%;
+}
+
+#poh-di-a-lpp-first-section button {
+  margin: 2.5% 0;
+}
+
+#poh-di-a-lpp-first-section-reviews-bottom img {
+  padding-right: 10px;
+}
+
+/* Second Section */
+
+#poh-di-a-lpp-second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#poh-di-a-lpp-second-section p {
+  margin-bottom: 5%;
+  margin-top: 0;
+}
+
+#poh-di-a-lpp-second-section > div {
+  display: flex;
+  gap: 3%;
+  padding-bottom: 2%;
+  justify-content: center;
+}
+
+#poh-di-a-lpp-second-section img {
+  width: 50%;
+}
+
+/* Third Section */
+
+#poh-di-a-lpp-third-section {
+  display: flex;
+}
+
+#poh-di-a-lpp-third-section img {
+  padding-right: 2%;
+}
+
+/* Fourth Section */
+
+#poh-di-a-lpp-fourth-section {
+  display: flex;
+  gap: 3%;
+}
+
+/* Fifth section */
+
+#poh-di-a-lpp-fifth-section {
+  text-align: center;
+}
+
+#poh-di-a-lpp-fifth-section > div {
+  display: flex;
+  gap: 3%;
+}
+
+#poh-di-a-lpp-fifth-section > div > div {
+  width: 33%;
+}
+
+#poh-di-a-lpp-fifth-section h3 {
+  font-weight: normal;
+}
+
+#poh-di-a-lpp-fifth-section strong {
+  display: block;
+}
+
+/* Sixth Section */
+
+@keyframes animateTop {
+  from {
+    bottom: -50%;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#poh-di-a-lpp-body #poh-di-a-lpp-sixth-section {
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+#poh-di-a-lpp-sixth-section > span {
+  display: block;
+  text-align: center;
+}
+
+#poh-di-a-lpp-sixth-section h2 {
+  text-align: center;
+}
+
+#poh-di-a-lpp-sixth-section-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+#poh-di-a-lpp-sixth-section-card-container > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  transition: flex-grow 0.5s ease;
+}
+
+#poh-di-a-lpp-sixth-section-card-container > div:first-child {
+  flex-grow: 3;
+}
+
+#poh-di-a-lpp-sixth-section-card-container > div > div {
+  margin-top: 20px;
+  gap: 7%;
+  justify-content: space-between;
+}
+
+#poh-di-a-lpp-sixth-section-card-container img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+}
+
+#poh-di-a-lpp-sixth-section-card-container h3 {
+  margin-top: 0;
+  width: 35%;
+  display: flex;
+  color: #000;
+}
+
+#poh-di-a-lpp-sixth-section-card-container h3 span {
+  color: #0032A0;
+  font-size: 5rem;
+  padding-right: 10%;
+  margin-top: -30px;
+}
+
+#poh-di-a-lpp-sixth-section-card-container p {
+  display: none;
+  animation-name: animateTop;
+  animation-duration: 0.7s;
+  position: relative;
+  width: 65%;
+  height: 250px;
+}
+
+#poh-di-a-lpp-sixth-section-card-container > div:first-child p {
+  display: block;
+}
+
+#poh-di-a-lpp-sixth-section-financing-container {
+  text-align: center;
+}
+
+#poh-di-a-lpp-sixth-section-financing-container p {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+#poh-di-a-lpp-sixth-section-financing-container > div {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+/* Seventh section styles */
+#poh-di-a-lpp-seventh-section {
+  padding: 0 10%;
+}
+
+#poh-di-a-lpp-seventh-section h2 {
+  margin-top: 0;
+  margin-bottom: 2%;
+  color: #fff;
+}
+
+#poh-di-a-lpp-seventh-section p {
+  color: #fff;
+  padding-bottom: 1%;
+  margin-top: 0;
+}
+
+#poh-di-a-lpp-seventh-section div {
+  background-color: rgb(29, 29, 41);
+  padding: 4% 1%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Eighth section styles */
+
+#poh-di-a-lpp-eighth-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#poh-di-a-lpp-body #poh-doctor-switcher-cards-container {
+  gap: 30px;
+}
+
+#poh-di-a-lpp-body #poh-doctor-switcher-cards-container .poh-doctor-switcher-card {
+  width: 25%;
+}
+
+#poh-di-a-lpp-body #poh-doctor-switcher-cards-container h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+#poh-di-a-lpp-body #poh-doctor-switcher-cards-container strong {
+  display: block;
+}
+
+#poh-di-a-lpp-body #poh-doctor-switcher-cards-container button {
+  display: none;
+}
+
+#poh-di-a-lpp-eighth-section > p {
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+/* Ninth section styles */
+
+#poh-di-a-lpp-ninth-section {
+  text-align: center;
+}
+
+#poh-di-a-lpp-ninth-section .display-flex {
+  justify-content: center;
+  gap: 3%;
+  padding-top: 3%;
+}
+
+#poh-di-a-lpp-ninth-section > .display-flex img {
+  width: 50%;
+}
+
+/* Tenth section styles */
+#poh-di-a-lpp-tenth-section {
+  text-align: center;
+}
+
+#poh-di-a-lpp-tenth-section > p {
+  padding: 0 5%;
+}
+
+#poh-di-a-lpp-tenth-section .display-flex {
+  text-align: left;
+  gap: 3%;
+  padding-top: 2%;
+}
+
+/* Eleventh section styles */
+
+#poh-di-a-lpp-eleventh-section {
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+#poh-di-a-lpp-eleventh-section p {
+  padding-bottom: 2%;
+}
+
+/* Footer styles */
+
+#poh-di-a-lpp-footer-section {
+  text-align: center;
+  background-color: #2A3348;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+#poh-di-a-lpp-footer-section p {
+  font-size: .875rem;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0 5%;
+  line-height: 2;
+}
+
+#poh-di-a-lpp-footer-section a {
+  color: #fff;
+}
+
+#poh-di-a-lpp-footer-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding: 3% 0;
+}
+
+#poh-di-a-lpp-footer-section > ul {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
+  font-size: 1.875rem;
+}
+
+#poh-di-a-lpp-body #poh-di-a-lpp-footer-section > div > a {
+  font-size: 1.4375rem;
+  font-weight: bold;
+}
+
+#poh-di-a-lpp-footer-section ul li::before {
+  content: none;
+}
+
+/* Laptop media queries */
+@media only screen and (max-width: 1439px) {
+
+  #poh-di-a-lpp-header-navigation ul li a {
+    font-size: .75rem;
+  }
+
+  #poh-di-a-lpp-body #poh-di-a-lpp-header button {
+    font-size: .875rem;
+    padding: 8px 12px;
+  }
+
+}
+
+/* Tablet media queries */
+@media only screen and (max-width: 1023px) {
+
+  #poh-di-a-lpp-fourth-section, #poh-di-a-lpp-tenth-section .display-flex {
+    flex-direction: column;
+  }
+
+  #poh-di-a-lpp-fourth-section .one-half-column:first-child, #poh-di-a-lpp-tenth-section .display-flex .one-half-column:first-child {
+    width: 100%;
+  }
+
+  /* Header */
+
+  #poh-di-a-lpp-header {
+    display: none;
+  }
+
+  #poh-di-a-lpp-mobile-header {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 10px solid #004FA0;
+    box-shadow: 0px 10px 20px #0000000D;
+    z-index: 100;
+    position: relative;
+  }
+
+  /* Third section */
+
+  #poh-di-a-lpp-third-section {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  #paradigm-form-landing-quiz {
+    width: 100%;
+  }
+
+  /* Sixth section */
+
+  #poh-di-a-lpp-sixth-section-card-container {
+    flex-direction: column;
+  }
+
+  #poh-di-a-lpp-sixth-section-card-container > div > div {
+    flex-direction: column;
+  }
+
+  #poh-di-a-lpp-sixth-section-card-container p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #poh-di-a-lpp-sixth-section-card-container h3 {
+    width: 100%;
+  }
+
+  #poh-di-a-lpp-sixth-section-financing-container p {
+    font-size: 1.625rem;
+  }
+
+  #poh-di-a-lpp-sixth-section-financing-container > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #poh-di-a-lpp-sixth-section-financing-container {
+    margin-top: -20%;
+  }
+
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+  /* structure */
+
+  #poh-di-a-lpp-body .mobile-hidden {
+    display: block;
+  }
+
+  #poh-di-a-lpp-body .one-half-column, #poh-di-a-lpp-second-section img {
+    width: 100%;
+  }
+
+  #poh-di-a-lpp-second-section > div, 
+  #poh-di-a-lpp-fifth-section > div,
+  #poh-di-a-lpp-eleventh-section, #poh-di-a-lpp-footer-section nav ul {
+    flex-direction: column;
+  }
+
+  #poh-di-a-lpp-body .section-padding {
+    padding: 5%;
+  }
+
+  /* First section */
+
+  #poh-di-a-lpp-first-section {
+    display: none;
+  }
+
+  #poh-di-a-lpp-first-section-mobile h1 {
+    margin-bottom: 12%;
+  }
+
+  #poh-di-a-lpp-first-section-mobile > img {
+    width: 100%;
+  }
+
+  #poh-di-a-lpp-first-section-mobile-reviews {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  #poh-di-a-lpp-first-section-mobile-reviews-bottom {
+    padding: 0 5%;
+    padding-bottom: 10%;
+  }
+
+  #poh-di-a-lpp-first-section-mobile-reviews-bottom img {
+    margin-right: 10px;
+  }
+
+  #poh-di-a-lpp-first-section-mobile-reviews-bottom img:last-of-type {
+    margin-right: 0;
+  }
+
+  #poh-di-a-lpp-first-section-mobile-small-text {
+    font-size: .875rem;
+  }
+
+  /* Second section */
+
+  #poh-di-a-lpp-second-section > div {
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  #poh-di-a-lpp-second-section p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  /* Fifth section */
+
+  #poh-di-a-lpp-fifth-section > div > div {
+    width: 100%;
+  }
+
+  /* Sixth section */
+
+  #poh-di-a-lpp-sixth-section-card-container p {
+    display: block;
+    width: 100%;
+  }
+
+  /* Seventh section */
+
+  #poh-di-a-lpp-seventh-section {
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+  #poh-di-a-lpp-seventh-section p {
+    font-size: 1.25rem;
+  }
+
+  #poh-di-a-lpp-body #poh-di-a-lpp-seventh-section .button {
+    font-size: .75rem;
+    padding: 8px 12px;
+  }
+
+  #poh-di-a-lpp-seventh-section div {
+    padding: 15% 10%;
+  }
+
+  /* Eighth section */
+
+  #poh-doctor-switcher-cards-container {
+    flex-direction: column;
+  }
+
+  #poh-di-a-lpp-body #poh-doctor-switcher-cards-container .poh-doctor-switcher-card, #poh-di-a-lpp-eighth-section > p {
+    width: 100%;
+  }
+
+  #poh-di-a-lpp-eighth-section > p {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  /* Ninth section */
+
+  #poh-di-a-lpp-ninth-section .display-flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #poh-di-a-lpp-ninth-section > .display-flex img {
+    width: 100%;
+  }
+
+  /* Tenth section */
+
+  #poh-di-a-lpp-tenth-section {
+    margin-top: 10%;
+  }
+
+  /* Eleventh section */
+
+  #poh-di-a-lpp-body #poh-di-a-lpp-eleventh-section {
+    margin-top: 5%;
+    padding-bottom: 20%;
+  }
+
+  /* Footer */
+
+  #poh-di-a-lpp-footer-section {
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  #poh-di-a-lpp-footer-section nav ul {
+    gap: 30px;
+    padding-top: 6%;
+    padding-bottom: 9%;
+  }
+
+  #poh-di-a-lpp-footer-section > ul {
+    gap: 20px;
+    padding-top: 9%;
+    padding-bottom: 3%;
+  }
+
+  #poh-di-a-lpp-footer-section p {
+    font-size: .75rem;
+  }
+
+}

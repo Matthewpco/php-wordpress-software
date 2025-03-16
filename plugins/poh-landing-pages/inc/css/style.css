@@ -1,0 +1,720 @@
+/*
+Name: Precision Oral Surgery Landing Page Styles
+Version: 1.0.0
+*/
+
+#landing-page-header ~ * h1 {
+  color: var(--black);
+  font-size: 3.75rem;
+  font-family: "trajan-pro-3", Arial, sans-serif;
+}
+
+#landing-page-header ~ * h2 {
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-family: "trajan-pro-3", Arial, sans-serif;
+}
+
+#landing-page-header ~ * h3 {
+  color: var(--purple);
+  font-size: 1.625rem;
+  font-family: "trajan-pro-3", Arial, sans-serif;
+}
+
+#landing-page-header ~ * p {
+  color: var(--gray);
+  font-family: "lato-regular", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+#landing-page-header ~ * button {
+  background-color: var(--dark-blue);
+  color:  var(--white);
+  font-family: "lato-bold", Arial, sans-serif;
+  font-size: 1rem;
+  transition-duration: 0.3s;
+  border: 2px solid var(--dark-blue);
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#landing-page-header ~ * button:hover {
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+#landing-page-header ~ * ul li {
+  list-style-type: none;
+  font-size: 1.25rem;
+  color: var(--black);
+  font-family: "lato bold", Arial, sans-serif;
+}
+
+#landing-page-header ~ * ul li::before {
+  content: "•";
+  font-size: 3.5rem;
+  color: var(--blue);
+  line-height: 2.5rem; /* Adjust this value as needed */
+  vertical-align: middle; /* Aligns the bullet point vertically */
+  margin-right: 10px;
+}
+
+#landing-page-header ~ * img {
+  width: auto;
+}
+
+/* 14px */
+.text-small {
+  font-size: 0.75rem; 
+}
+
+/* Fonts */
+
+
+@font-face {
+  font-family: "trajan-pro-3";
+  src: local("trajan-pro-3"), url("../fonts/trajan-pro-3.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "lato-bold";
+  src: local("lato-regular"), url("../fonts/lato-bold.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: local("lato-regular"), url("../fonts/lato-regular.woff") format("truetype");
+}
+
+/* Custom Colors */
+/* These must have important to override any var colors from the base stylesheet */
+:root {
+  --white: #ffffff!important;
+  --gray: #383740!important;
+  --black: #141414!important;
+  --dark-blue: #0173ea!important;
+  --blue: #019ee2!important;
+  --purple: #322883!important;
+}
+
+.color-purple {
+  color: #322883!important;
+}
+
+.color-white {
+  color: white!important;
+}
+
+/* Landing page header */
+
+#landing-page-header {
+  padding: 2% 2.5% 1% 2.5%;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-image: linear-gradient(to right, #019ee2 0%, #322883 100% );
+  background-repeat: no-repeat;
+  background-size: 100% 20px;
+}
+
+#landing-page-header img {
+  width: 65%;
+}
+
+.secondary-btn {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* First Section */
+
+#first-section {
+  background-image: url('/wp-content/plugins/poh-landing-pages/inc/media/first-section-background.webp');
+  background-size: cover;
+  background-position: center;
+  padding-top: 2%;
+  z-index: 10;
+  position: relative;
+}
+
+#first-section > div > div:nth-child(6) > img {
+  width: 20%;
+}
+
+/* Second section */
+
+#landing-page-header ~ * .lightbox-trigger {
+  border-radius: 16px;
+  cursor: pointer;
+  width: 45%;
+  padding-bottom: 5%;
+}
+
+#second-section-footer {
+  flex-wrap: wrap;
+}
+
+#second-section-footer div {
+  flex-basis: 30%;
+}
+
+/* Third section */
+
+#third-section {
+  background: linear-gradient(var(--blue), var(--purple));
+}
+
+/* Fifth section */
+
+#fifth-section {
+  background-image: url('/wp-content/plugins/poh-landing-pages/inc/media/bg-technology.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+#fifth-section h2, #fifth-section p {
+  color: white;
+}
+
+#fifth-section-content {
+  padding-right: 30%;
+}
+
+/* Sixth section */
+
+#sixth-section {
+  background-color: #F2F9FF;
+}
+
+#sixth-section-header {
+  padding-bottom: 5%;
+  border-bottom: 2px solid var(--white);
+}
+
+#sixth-section p, #sixth-section span {
+  color: #322883;
+}
+
+#sixth-section-table p, #sixth-section-table span {
+  color: #019EE2;
+}
+
+#sixth-section-header img {
+  width: 90%;
+}
+
+#sixth-section-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sixth-section-table div {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.sixth-section-table-header p {
+  color: #322883!important;
+}
+
+#sixth-section-table .progress-bar {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 5%;
+}
+
+#sixth-section-table .progress-bar ~ span {
+  font-size: .8rem;
+}
+
+#sixth-section .progress-bar-green {
+  width: 80%;
+  background-color: #67BC3F;
+  height: 20px;
+  border-radius: 50px;
+}
+
+#sixth-section .progress-bar-yellow {
+  width: 40%;
+  background-color: #f8d430;
+  height: 20px;
+  border-radius: 50px;
+}
+
+#sixth-section .progress-bar-red {
+  width: 20%;
+  background-color: #FF3E3D;
+  height: 20px;
+  border-radius: 50px;
+}
+
+
+
+.progress-bar-yellow {
+  
+}
+
+/* Seventh Section */
+
+#seventh-section img {
+  width: 30%;
+}
+/* FAQ Section */
+
+#faq-section, #reviews-section {
+  z-index: 10;
+  position: relative;
+  background-color: white;
+}
+
+/* FAQ  LP Accordion Adapted to override cascades */
+
+#landing-page-body .accordion-container {
+  background-color:#F2F9FF;
+  padding: 2% 2.5%;
+  margin: 2% 0;  
+}
+
+/* Adding height so the entire answer is readable when dropped */
+#landing-page-body .accordion-toggle:checked + .accordion-label + .accordion-content {
+  max-height: 80vh;
+}
+
+#landing-page-body .accordion-label {
+  cursor: pointer;
+}
+
+#landing-page-body .accordion-label .accordion-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "SemplicitaPro", Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: none;
+  color: #322883;
+}
+
+#landing-page-body .accordion-label .accordion-question::after {
+  content: "+";
+  color: white;
+  padding: 0px 10px;
+  background-color:#0173EA;
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+#landing-page-body .accordion-toggle:checked + .accordion-label .accordion-question::after {
+  content: "—";
+  font-size: 1.5rem;
+  padding: 1px 9px 6px;
+}
+
+#landing-page-body .accordion-label .accordion-question::after {
+  transform: none;
+}
+
+/* Reviews section */
+
+#template-reviews-content .one-third-column {
+  text-align: center;
+  padding: 2.5%;
+}
+
+/* Contact Us Section */
+
+#contact-us-section {
+  z-index: 10;
+  position: relative;
+  background-color: #F2F9FF;
+}
+
+#contact-us-section a {
+  color: black;
+}
+
+/* Footer section */
+
+#footer-section {
+  padding: 1%;
+  background-color: #212121;
+  position: relative;
+  z-index: 10;
+}
+
+#footer-section span {
+  color: white;
+}
+
+/* Form */
+#paradigm-forms-landing-container {
+  position: fixed;
+  top: 130px;
+  width: 25%;
+  z-index: 9;
+  background-color: var(--purple);
+  border-radius: 8px;
+}
+
+#paradigm-form input#submit {
+  background-color: #0173EA;
+  color:  var(--white);
+  font-family: "lato-bold", Arial, sans-serif;
+  font-size: 1rem!important;
+  transition-duration: 0.3s;
+  border: 2px solid #0173EA;
+  padding: 12px 28px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#paradigm-form input#submit:hover {
+  background-color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+/* Responsive media queries */
+
+/* Laptop media queries */
+@media only screen and (max-width: 1439px) {
+
+  #second-section .lightbox-trigger-container {
+    height: fit-content;
+  }
+
+  #second-section .lightbox-trigger {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .contact-image-doctors {
+    height: 100%;
+  }
+
+}
+
+/* Tablet media queries */
+@media only screen and (max-width: 1023px) {
+
+  #landing-page-body .two-thirds-column {
+    width: 100%;
+  }
+
+  /* header */
+
+  #landing-page-header .mobile-hidden {
+      display: initial;
+  }
+
+  #landing-page-header {
+    background-size: 100% 10px;;
+  }
+
+  #landing-page-header .one-quarter-column {
+    align-content: center;
+  }
+
+  /* first section */
+
+  #first-section {
+    display: none;
+  }
+
+  #first-section-mobile {
+    display: block;
+    background-color: #FFFBF4;
+  }
+
+  #first-section-mobile img {
+    width: 20%;
+  }
+
+  #first-section-mobile div:nth-child(5) > img {
+    width: 3%;
+    height: fit-content;
+  }
+
+  #landing-page-body iframe {
+    width: 75%;
+  }
+
+  /* Second Section */
+
+  #second-section {
+    flex-direction: column;
+  }
+
+  #second-section .two-thirds-column h2, #second-section > div.two-thirds-column.padding-right > div {
+    text-align: center;
+  }
+
+  #second-section .lightbox-trigger-container {
+    justify-content: center;
+ }
+
+  #second-section .lightbox-trigger{
+    width: 45%;
+  }
+
+  /* Third Section */
+
+  .third-section-about-us {
+    flex-direction: column;
+  }
+
+  /* Form */
+
+  #landing-page-body #paradigm-forms-landing-container {
+    border: 4px solid #FFFFFF;
+    padding: 5%;
+    position: inherit;
+    display: block;
+    width: 90%;
+    text-align: center;
+ }
+
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+  /* structure */
+
+  #landing-page-body h1 {
+      font-size: 2.25rem;
+  }
+
+  #landing-page-body h2 {
+      font-size: 1.875rem;
+  }
+
+  #landing-page-body p, #landing-page-body ul li {
+    font-size: 1rem;
+  }
+
+  #landing-page-body .one-half-column, #landing-page-body .one-third-column, #landing-page-body .two-thirds-column, #landing-page-body .one-quarter-column, #landing-page-body .three-quarters-column {
+      width: 100%;
+  }
+
+  #landing-page-body button {
+    font-size: .85rem;
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  /* header */
+
+  #landing-page-header {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  #landing-page-header button {
+    display: none;
+  }
+
+  #landing-page-header img {
+    width: 190px;
+  }
+
+  /* first section */
+
+  #first-section-mobile div {
+    text-align: center;
+  }
+
+  #first-section-mobile img {
+    width: 35%;
+}
+
+  /* second section */
+
+  #second-section .lightbox-trigger-container {
+    justify-content: center;
+  }
+
+  #second-section .lightbox-trigger {
+    width: 100%;
+  }
+
+  #second-section-footer div {
+    flex-basis: 100%;
+  }
+
+  /* third section */
+
+  #third-section {
+    background: linear-gradient(var(--blue), var(--purple) 50%);
+  }
+
+  #third-section > div > div {
+    flex-direction: column;
+  }
+
+  #third-section img {
+    width: 20%;
+  }
+
+  /* form */
+
+  #third-section #paradigm-forms-landing-container {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #third-section #paradigm-forms-container .one-half-column, #third-section #paradigm-forms-container .form-field, #third-section #paradigm-forms-landing-container .form-field {
+    padding-top: 3%;
+  }
+
+  #paradigm-forms-landing-container > h3 {
+    color: var(--white);
+    text-align: left;
+  }
+
+  /* fourth section */
+
+  #fourth-section > div > div > div.one-half-column.padding-5 {
+    padding: 0;
+  }
+
+  #fourth-section .two-thirds-column .display-flex {
+    flex-direction: column;
+  }
+
+  /* fifth section */
+
+  #fifth-section {
+    background-image: none;
+    background-color: #001225;
+    padding: 0;
+  }
+
+  #fifth-section .two-thirds-column {
+    padding: 5%;
+  }
+
+  #fifth-section .hidden {
+    display: block;
+  }
+
+  #fifth-section img {
+    background-image: url('/wp-content/plugins/poh-landing-pages/inc/media/bg-technology.webp');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Sixth section */
+
+  #sixth-section-table p, #sixth-section-table span {
+    font-size: .75rem;
+  }
+
+  #sixth-section-header {
+    flex-direction: column;
+}
+
+  #sixth-section-header img {
+    width: 100%;
+  }
+
+  #sixth-section .progress-bar-green {
+    width: 90%;
+  }
+  
+  #sixth-section .progress-bar-yellow {
+    width: 60%;
+  }
+  
+  #sixth-section .progress-bar-red {
+    width: 35%;
+  }
+
+  /* seventh section */
+
+  #seventh-section > div > h2, #seventh-section div p {
+    text-align: center;
+  }
+
+  #seventh-section .display-flex {
+    flex-direction: column;
+  }
+
+  #seventh-section img {
+    width: 45%;
+  }
+
+  #template-reviews-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #template-reviews-content .fa-star {
+    font-size: 1.75rem;
+  }
+
+  /* faq */
+
+  #faq-section .lp-accordion-container {
+    padding: 5% 3%;
+    margin: 5% 0;
+  }
+
+  #faq-section .lp-accordion-question {
+    padding-right: 1%;
+  }
+
+  #seventh-section > div > div > div:nth-child(2) > ul > li {
+    flex-wrap: wrap;
+  }
+
+  #seventh-section > div > div > div:nth-child(2) > ul > li > a:nth-child(2) > img {
+    width: 60%;
+  }
+
+  /* reviews */
+
+  #template-reviews-content .one-third-column {
+    padding: 0;
+}
+
+  #template-reviews {
+    padding: 15% 5%;
+  }
+
+  #template-reviews .template-reviews-content {
+    flex-direction: column;
+  }
+
+  /* contact */
+
+  #contact-us-section .display-flex {
+    flex-direction: column;
+
+  }
+
+  #landing-page-body iframe {
+    width: 100%;
+}
+
+  /* footer */
+
+  #footer-section {
+    padding: 5%
+  }
+
+  .footer-copy span {
+    font-size: 0.75rem;
+  }
+
+}

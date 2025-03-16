@@ -1,0 +1,131 @@
+#paradigm-request-form-container .hidden {
+    display: none;
+}
+
+#paradigm-request-form-container input::placeholder, #paradigm-request-form-container textarea::placeholder, #paradigm-request-form-container select::placeholder { 
+    color: #353535;
+    opacity: 1; /* Firefox */
+}
+
+
+#paradigm-request-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 5% / 3%;
+}
+
+#prf-body {
+    background-image: url('prf-bg.png');
+    background-size: cover;
+}
+
+#paradigm-request-form input[type="submit"] {
+    background-color: #85adb8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: .5rem 0;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#paradigm-request-form input[type="submit"]:hover {
+    background-color: white;
+    color: #85adb8;
+}
+
+#paradigm-request-form input, #paradigm-request-form textarea, #paradigm-request-form select {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #bbd2d8;
+    border-radius: 8px;
+    padding: .5rem;
+    line-height: 1.15;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    resize: none;
+    font-size: 1rem;
+}
+
+#paradigm-request-form label {
+    color: #305e69 !important;
+}
+
+#paradigm-request-form > label:nth-child(11) > a {
+    color: #0101aa;
+}
+
+#paradigm-request-form label, #paradigm-request-form-container p, #paradigm-request-form-container input, #paradigm-request-form-container textarea, #paradigm-request-form-container select {
+    font-size: .85rem;
+    color: #0f1a28;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#paradigm-request-form-container #paradigm-form-received {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: black;
+}
+
+#paradigm-request-form-container .paradigm-example-image {
+    height: 350px;
+    background-image: url(example.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#prf-template h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2% 0;
+    color: #0f1a28;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#paradigm-request-form-container .error {
+    text-align: center;
+    font-weight: 700;
+    color: red!important;
+    z-index: 1;
+}
+
+#paradigm-request-form input, #paradigm-request-form textarea, #paradigm-request-form select {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: #353535;
+}
+  
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+    #paradigm-request-form-container {
+        border-radius: 0;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #paradigm-request-form-container .paradigm-example-image {
+        height: 150px;
+    }
+
+    #paradigm-request-form-container #paradigm-form-received {
+        margin-top: 16px;
+    }
+
+}

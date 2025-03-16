@@ -1,0 +1,106 @@
+/* Paradigm form styles */
+
+#paradigm-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#paradigm-form p {
+    text-align: center;
+    font-size: .9rem;
+}
+
+#paradigm-form .form-field {
+    flex-basis: 100%;
+    padding: 8px;
+}
+
+#paradigm-forms-sidebar-container #paradigm-form .form-field, #paradigm-forms-landing-container #paradigm-form .form-field {
+    padding: 4px 0;
+}
+
+#paradigm-form .flex-basis-half {
+    flex-basis: 50%;
+}
+
+#paradigm-form input[type='submit'] {
+    padding: 8px;
+}
+
+#paradigm-forms-sidebar-container, #paradigm-forms-landing-container {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+#paradigm-form .form-field input,
+#paradigm-form .form-field textarea,
+#paradigm-form .form-field select {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: #353535;
+    
+}
+
+#paradigm-form .form-field input::placeholder, #paradigm-form .form-field textarea::placeholder {
+    color: #353535;
+}
+
+#paradigm-forms-button {
+    padding: 8px;
+}
+
+#paradigm-forms-sidebar-button, #paradigm-forms-sidebar-button input {
+    width: 100%;
+    margin-top: 4px;
+}
+
+#paradigm-form-received {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Landing page b form */
+#paradigm-forms-landing-b-container #paradigm-form input, #paradigm-forms-landing-b-container #paradigm-form select, #paradigm-forms-landing-b-container #paradigm-form textarea {
+    border: 1px solid #E5E5E5;
+} 
+
+#paradigm-forms-landing-b-container {
+    padding: 1%;
+}
+
+#paradigm-forms-landing-b-submit input {
+    color: #353535;
+}
+
+#paradigm-forms-landing-b-footer {
+    padding: 8px 0;
+}
+
+#paradigm-form #paradigm-forms-landing-b-footer p {
+    text-align: left;
+    font-size: .875rem;
+}
+
+#paradigm-forms-landing-b-container #paradigm-form .form-field {
+    padding: 8px 0;
+}
+
+#paradigm-forms-landing-b-container textarea {
+    font-family: sans-serif;
+}
+
+#paradigm-forms-landing-b-container h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) { 
+    #paradigm-form .flex-basis-half {
+        flex-basis: 100%;
+    }
+}
